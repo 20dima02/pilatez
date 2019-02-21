@@ -3,23 +3,17 @@
   display: flex;
 }
 
-.external-link{
-  text-transform: uppercase;
-  position: relative;
-  color: var(--grey);
-  list-style-type: none;
+.external-links_item+.external-links_item{
+  margin-left: 20px;
 }
 
-.external-link+.external-link:before{
-  position: absolute;
-  content: "";
-  width: 2px;
-  height: 100%;
-  background-color: currentColor;
-  top: 0;
-  left: -15px;
-}
-
-.external-link+.external-link{
-  margin-left: 30px;
+.external-links_link{
+  font-size: 20px;
+  color: white;
+  transition: opacity 0.3s ease-in-out;
+  &:hover{
+    text-decoration: none;
+    color: white;
+    opacity: 0.7;
+  }
 }
